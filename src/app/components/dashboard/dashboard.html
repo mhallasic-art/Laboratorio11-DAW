@@ -1,0 +1,27 @@
+<div class="container mt-4">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>✅ Panel Principal</h1>
+    
+    <!-- 🚪 ACTIVIDAD 4: BOTÓN DE LOGOUT -->
+    <button class="btn btn-danger" (click)="cerrarSesion()">
+      🔒 Cerrar Sesión
+    </button>
+  </div>
+
+  <div class="alert alert-info shadow">
+    <h4>📌 Estado de la sesión:</h4>
+    <p>✅ Autenticado correctamente con JWT</p>
+    <p>📂 Token guardado en el navegador</p>
+    <p>⏱️ El token caduca en 5 minutos (para probar Actividad 3)</p>
+  </div>
+
+  <hr>
+
+  <h3>📂 Gestión de Datos (CRUD Protegido)</h3>
+  <ul class="list-group mt-3 shadow">
+    <li class="list-group-item"><a routerLink="/cursos" class="text-decoration-none">📚 Gestión de Cursos</a></li>
+    <li class="list-group-item"><a routerLink="/productos" class="text-decoration-none">🛒 Gestión de Productos</a></li>
+    <li class="list-group-item"><a routerLink="/libros" class="text-decoration-none">📖 Gestión de Libros</a></li>
+    <li class="list-group-item"><a routerLink="/usuarios" class="text-decoration-none">👤 Lista de Usuarios</a></li>
+  </ul>
+</div>
